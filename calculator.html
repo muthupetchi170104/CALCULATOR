@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            text-align:center;
+            border-radius:25px;
+            border:10px solid black;
+            padding:10px;
+            width:400px;
+            background-color:aqua;
+        }
+        div:hover{
+            background-color:red;
+        }
+        
+    </style>
+</head>
+<body>
+    <script>
+    function sum(){
+        let a=Number(document.getElementById("n1").value);
+        let b=Number(document.getElementById("n2").value);
+        let ans=a+b;
+        document.getElementById("ans").value=ans;
+    }
+    function sub(){
+    let a=Number(document.getElementById("n1").value);
+    let b=Number(document.getElementById("n2").value);
+    let ans=a-b;
+    document.getElementById("ans").value=ans;
+    }
+    function multiply(){
+    let a=Number(document.getElementById("n1").value);
+    let b=Number(document.getElementById("n2").value);
+    let ans=a*b;
+    document.getElementById("ans").value=ans;
+    }
+    function divide(){
+    let a=Number(document.getElementById("n1").value);
+    let b=Number(document.getElementById("n2").value);
+    let ans=a/b;
+    document.getElementById("ans").value=ans;
+    }
+    </script>
+    <div>
+    <h1>CALCULATOR!..</h1>
+    <input type="number" placeholder="num1" id="n1" ><br><br>
+    <input type="number" placeholder="num2" id="n2"><br><br>
+    <button onclick="sum()" >Add</button>
+    <button onclick="sub()" >Sub</button><br><br>
+    <button onclick="multiply()" >Multiply</button>
+    <button onclick="divide()" >Division</button><br><br>
+    <input type="number" placeholder="answer" id="ans">
+    </div>
+   
+</body>
+</html>
